@@ -21,7 +21,7 @@ const Faq = ({ questions, popup }) => {
         <div className={styles.wrapper}>
           <h2>LA MEUTE DES LOUVETEAUX</h2>
           <h3>ASSOCIATION LOI DE 1901</h3>
-          <div className="faq-container">
+          <div className={styles.container}>
             {questions.data.map((f) => (
               <AccordionItem item={f} key={f.id} />
             ))}

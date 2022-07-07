@@ -8,10 +8,16 @@
 
 .wrapper {
   padding: 5vw;
+  width: 70%;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.container {
+  width: 100%;
 }
 
 .faq h2 {

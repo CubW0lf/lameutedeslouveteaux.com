@@ -15,6 +15,7 @@
   font-weight: 400;
   color: var(--body);
   cursor: pointer;
+  width: 100%;
 }
 
 .chevron {
@@ -28,34 +29,25 @@
 }
 
 .answer {
-  transform: scaleY(0);
-  padding: 0;
-  margin-top: 0;
-  font-size: 0;
-  transition: all 0.4s;
+  padding: 1vw;
+  margin-top: 1vh;
+  opacity: 0;
+  transition: all 0.4s 1s;
 }
 
 .answer p {
-  display: none;
   opacity: 0;
-  transition: all 0.4s;
 }
 
 .answerActive {
-  background-color: var(--body);
-  margin-top: 2vh;
-  padding: 2vw;
-  transform: scaleY(1);
-  z-index: -1;
-  position: relative;
-  transition: all 0.4s;
+  transition: all 0.4s 1s;
+  padding: 1vw;
+  margin-top: 1vh;
 }
 
 .answerActive p {
-  color: var(--primary);
-  display: block;
   opacity: 1;
-  transition: all 0.4s;
+  color: var(--primary);
 }
 
 @media screen and (min-width: 1200px) {
