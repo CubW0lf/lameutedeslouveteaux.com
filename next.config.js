@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["api.lameutedeslouveteaux.vincentcottalorda.me"],
+    domains: ["api.lameutedeslouveteaux.com"],
   },
 };
 
