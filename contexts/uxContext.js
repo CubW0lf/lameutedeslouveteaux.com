@@ -11,6 +11,21 @@ export const UxWrapper = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [redirect, setRedirect] = useState("");
   const [initialize, setInitialize] = useState(false);
+  const [token, setToken] = useState(null);
+
+  useEffect(() => {
+    setToken(localStorage.getItem("auth_token"));
+
+    return setToken(localStorage.getItem("auth_token"));
+  }, []);
+
+  useEffect(() => {
+    if (token !== null) {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
+    }
+  }, [token]);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -44,6 +59,8 @@ export const UxWrapper = ({ children }) => {
         setRedirect,
         initialize,
         setInitialize,
+        token,
+        setToken,
       }}
     >
       {children}

@@ -14,8 +14,6 @@ const Register = () => {
 
   const { flash, flashType, handleFlash, setIsAuthenticated, isAuthenticated, redirect, setRedirect } = useUxContext();
 
-  console.log(redirect);
-
   useEffect(() => {
     if (isAuthenticated) {
       if (redirect !== "") {
@@ -37,8 +35,8 @@ const Register = () => {
   const submit = async (credentials) => {
     await login(credentials)
       .then(() => {
-        handleFlash("success", "Connexion...", 1000);
         setIsAuthenticated(true);
+        handleFlash("success", "Connexion...", 1000);
       })
       .catch((err) => handleFlash("error", err.message, 3000));
   };

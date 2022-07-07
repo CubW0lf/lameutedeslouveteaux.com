@@ -6,8 +6,6 @@ import getAssetURL from "../../directus/getAssets";
 
 const Project = ({ project }) => {
   dayjs.locale("fr");
-
-  console.log(getAssetURL(project.featured_image.id));
   return (
     <div
       className={styles.container}

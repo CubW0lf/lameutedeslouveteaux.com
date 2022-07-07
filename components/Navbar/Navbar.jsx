@@ -7,10 +7,11 @@ import directus from "../../directus/directus";
 import { useUxContext } from "../../contexts/uxContext";
 
 const Navbar = () => {
-  const { isAuthenticated, setIsAuthenticated } = useUxContext();
+  const { isAuthenticated, setIsAuthenticated, setToken } = useUxContext();
 
   const logout = async () => {
     await directus.auth.logout();
+    setToken(null);
     setIsAuthenticated(false);
   };
 
