@@ -1,0 +1,32 @@
+.form {
+  width: 60%;
+  background-color: #eee;
+  padding: 2vw;
+  border-radius: 4px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--primary);
+  background-color: white;
+  font-size: 1.5vh;
+  font-family: var(--linkFont);
+}
+
+.form input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--body);
+}
+
+.form input[type="submit"]:hover {
+  background-color: #283f53;
+}
+
+@media screen and (min-width: 1200px) {
+}

@@ -1,0 +1,82 @@
+.popup {
+  position: fixed;
+  right: 2vw;
+  bottom: 1vw;
+  width: 96vw;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.avatar {
+  width: 15vw;
+  right: 0;
+  cursor: pointer;
+}
+
+.bubble {
+  background-color: var(--body);
+  padding: 1vw;
+  border-radius: 5px;
+  filter: drop-shadow(0 2px 5px var(--primary));
+  position: relative;
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.bubble::after {
+  position: absolute;
+  bottom: 0;
+  left: 75%;
+  transform: translate(-50%, 95%);
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  background-color: var(--body);
+  filter: drop-shadow(0 5px 2px var(--primary));
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.bubble h3 {
+  font-family: var(--font);
+  margin-bottom: 0.5vh;
+  text-align: left;
+}
+
+.bubble p {
+  font-family: var(--font);
+  margin-top: 1vh;
+}
+
+.active {
+  animation: enter 1s ease;
+}
+
+@keyframes enter {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 1vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .popup {
+    width: 30vw;
+  }
+}

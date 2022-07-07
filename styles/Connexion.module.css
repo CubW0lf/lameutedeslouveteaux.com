@@ -1,0 +1,36 @@
+.login {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+}
+
+.error {
+  color: var(--error) !important;
+  font-size: 2vh;
+  font-family: var(--linkFont);
+}
+
+.form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit:hover {
+  opacity: 0.9;
+}
+
+.forgot {
+  margin-top: 1vh;
+  font-family: var(--linkFont);
+  color: var(--secondary);
+  font-weight: 500;
+}

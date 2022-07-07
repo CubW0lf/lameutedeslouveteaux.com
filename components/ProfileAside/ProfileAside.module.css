@@ -1,0 +1,82 @@
+.container {
+  height: 10vh;
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+  padding: 1vw;
+}
+
+.container a svg {
+  position: absolute;
+  opacity: 0.3;
+  color: var(--body);
+  z-index: 1;
+  font-size: 7vh;
+}
+
+.container a span {
+  font-weight: 500;
+  font-size: 3vh;
+  color: var(--body);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.container a:hover {
+  background-color: #274158;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 15vw;
+    height: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    bottom: auto;
+  }
+
+  .container a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+    padding: 1vw;
+  }
+
+  .container a svg {
+    position: absolute;
+    opacity: 0.3;
+    color: var(--body);
+    z-index: 1;
+    font-size: 7vh;
+  }
+
+  .container a span {
+    font-weight: 400;
+    font-size: 2.3vh;
+    visibility: visible;
+  }
+
+  .container a:hover {
+    background-color: #274158;
+  }
+}

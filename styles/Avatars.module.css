@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 95vh;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  min-height: 85vh;
+  padding: 5vh 5vw 10vh 5vw;
+}
+
+.selector button {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.avatars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 90%;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 2vw;
+  text-align: center;
+}
+
+.avatarSelected {
+  padding: 2vw;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 3px solid var(--primary);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.selectedContainer {
+  position: relative;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectedContainer p {
+  font-family: var(--linkFont);
+  color: var(--primary);
+  font-size: 3.5vh;
+}
+
+.selectedImage {
+  position: relative;
+  width: 50vw;
+}
+
+@media screen and (min-width: 1200px) {
+  .avatars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selectedContainer {
+    width: 25vw;
+  }
+
+  .selectedImage {
+    width: 25vw;
+  }
+
+  .selector {
+    min-height: 85vh;
+    padding: 5vw;
+  }
+}

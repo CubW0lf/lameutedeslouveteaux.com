@@ -1,0 +1,28 @@
+.container {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.container a {
+  width: 100%;
+  height: 10vh;
+  color: var(--body);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}

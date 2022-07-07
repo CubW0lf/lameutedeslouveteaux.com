@@ -1,0 +1,263 @@
+.navbar {
+  height: 5vh;
+  position: fixed;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+}
+
+.wrapper a {
+  margin: 0 10px;
+  color: #f1f1f1;
+}
+
+.wrapper > ul {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper > ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  color: var(--body);
+  height: 5vh;
+  position: relative;
+}
+
+.chevron {
+  position: absolute;
+  width: 100%;
+  transform: translateY(60%) rotate(180deg);
+  font-size: 2.5vh;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+
+.wrapper ul li ul {
+  height: auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--body);
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s;
+  width: 150%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.wrapper ul li:hover ul {
+  transition: all 0.4s;
+  transform: translate(-50%, 98%);
+}
+
+.wrapper ul li:hover .chevron {
+  transition: all 0.4s;
+  transform: translateY(60%) rotate(0);
+}
+
+.wrapper ul li ul li {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper ul li ul li a {
+  color: var(--primary);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper ul li ul li:not(:last-child) {
+  border-bottom: 1px solid var(--primary);
+}
+
+.wrapper ul li ul li::before {
+  content: "\25A0";
+  color: var(--primary);
+  position: absolute;
+  left: 2vw;
+}
+
+.wrapper ul li ul li:hover a {
+  color: var(--secondary);
+}
+
+.wrapper ul li ul li:hover::before {
+  color: var(--secondary);
+}
+
+.wrapper ul li ul li:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.logo {
+  width: 10vw;
+  height: 4vh;
+  left: 50%;
+  transform: translate(-50%, 0.5vh);
+  position: absolute;
+  z-index: 20;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    height: 5vh;
+    position: fixed;
+    width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+  }
+
+  .wrapper a {
+    margin: 0 10px;
+    color: #f1f1f1;
+  }
+
+  .wrapper > ul {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .wrapper > ul > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    color: var(--body);
+    height: 5vh;
+    position: relative;
+  }
+
+  .chevron {
+    position: absolute;
+    width: 100%;
+    transform: translateY(60%) rotate(180deg);
+    font-size: 2.5vh;
+    opacity: 0.5;
+    transition: all 0.4s;
+  }
+
+  .wrapper ul li ul {
+    height: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--body);
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.4s;
+    width: 150%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .wrapper ul li:hover ul {
+    transition: all 0.4s;
+    transform: translate(-50%, 98%);
+  }
+
+  .wrapper ul li:hover .chevron {
+    transition: all 0.4s;
+    transform: translateY(60%) rotate(0);
+  }
+
+  .wrapper ul li ul li {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper ul li ul li a {
+    color: var(--primary);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper ul li ul li:not(:last-child) {
+    border-bottom: 1px solid var(--primary);
+  }
+
+  .wrapper ul li ul li::before {
+    content: "\25A0";
+    color: var(--primary);
+    position: absolute;
+    left: 2vw;
+  }
+
+  .wrapper ul li ul li:hover a {
+    color: var(--secondary);
+  }
+
+  .wrapper ul li ul li:hover::before {
+    color: var(--secondary);
+  }
+
+  .wrapper ul li ul li:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .logo {
+    width: 10vw;
+    height: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0.5vh);
+    position: absolute;
+    z-index: 20;
+  }
+
+  .logout {
+    cursor: pointer;
+  }
+}

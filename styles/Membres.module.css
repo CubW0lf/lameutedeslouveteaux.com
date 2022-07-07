@@ -1,0 +1,17 @@
+.membres {
+  background-color: var(--body);
+  min-height: 95vh;
+  position: relative;
+  z-index: -1;
+}
+
+.container {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+}

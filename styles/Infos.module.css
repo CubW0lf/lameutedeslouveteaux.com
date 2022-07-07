@@ -1,0 +1,77 @@
+.container {
+  height: 95vh;
+}
+
+.hero {
+  height: 75vh;
+  position: relative;
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: -1;
+}
+
+.quote {
+  width: 30%;
+  height: 80%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote q {
+  color: var(--body);
+  text-align: center;
+}
+
+.quote cite {
+  color: var(--secondary);
+}
+
+.socials {
+  width: 20%;
+  height: 80%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.socials svg {
+  font-size: 8vh;
+  padding: 1vw;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: var(--body);
+}
+
+.network {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 5vh;
+}
+
+.network span {
+  color: var(--body);
+  font-family: var(--titleFont);
+  line-height: 1;
+  font-size: 4.5vh;
+  text-align: center;
+}
+
+.document {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,32 @@
+.container {
+  width: 20vw;
+  height: 20vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 1vw;
+}
+
+.container h3 {
+  background-color: var(--body);
+  font-size: 2.5vh;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--body);
+}
+
+.avatar {
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  display: block;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

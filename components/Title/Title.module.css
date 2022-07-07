@@ -1,0 +1,17 @@
+.title {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  background-size: cover;
+}
+
+.title h1 {
+  text-align: center;
+  color: var(--body);
+  font-size: 7vh;
+  font-family: var(--font);
+}
